@@ -1,0 +1,35 @@
+<mat-card appearance="outlined" class="home-main-container">
+    <mat-card-header>
+        <div class="header-section">
+            <div class="name-container">
+                <h1>MANI</h1>
+            </div>
+            <div class="nav-container">
+                <div [ngClass]="{'active-tab':'home' === selectedTab}" (click)="routeHandler('home')">
+                    <h4 >Home</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'about' === selectedTab}" (click)="routeHandler('about')">
+                    <h4>About</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'resume' === selectedTab}" (click)="routeHandler('resume')">
+                    <h4>Resume</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'service' === selectedTab}" (click)="routeHandler('service')">
+                    <h4>Services</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'skill' === selectedTab}" (click)="routeHandler('skill')">
+                    <h4>Skills</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'project' === selectedTab}" (click)="routeHandler('project')">
+                    <h4>Projects</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'blog' === selectedTab}" (click)="routeHandler('blog')">
+                    <h4>My Blog</h4>
+                </div>
+                <div [ngClass]="{'active-tab':'contact' === selectedTab}" (click)="routeHandler('contact')">
+                    <h4>Contact</h4>
+                </div>
+            </div>
+        </div>
+    </mat-card-header>
+</mat-card>

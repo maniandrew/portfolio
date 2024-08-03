@@ -1,0 +1,105 @@
+.home-main-container {
+    min-height: 100vh;
+    background-color: transparent;
+    min-width: 100vh;
+}
+
+
+.home-content-holder {
+    position:relative;
+    display: inline-block;
+    left: 9vw;
+    padding: 20px;
+    width: auto;
+    animation-name: home-content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+.hello-div h3{
+    font-size:15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffbd39;
+}
+
+
+.home-para-div h1 {
+    margin-top: 20px;
+    font-size: clamp(45px ,30px ,20px);
+    color: white;
+    font-weight: 800;
+}
+
+
+.home-para-div span {
+    color:#ffbd39;
+    font-size: clamp(45px ,30px ,20px);
+    font-weight: 800;
+}
+
+.home-para-div .strong {
+    display: flex;
+    margin-top: 30px;
+    font-size: clamp(30px,20px,10px);
+    color: white;
+    font-weight: 600;
+}
+
+.home-action-button {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-action-button .hire {
+    background-color: #ffbd39;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.home-action-button .projects {
+    background-color: black;
+    border:none;
+    outline: 2px solid white;
+}
+
+
+.image-container {
+    display: flex;
+    animation-name: home-image;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+
+.image-container img {
+    height: 400px;
+    width: 395px;
+}
+
+
+
+@keyframes home-content {
+    0% {
+        margin-top: 0px;
+    }
+    
+    100%{
+        margin-top: 100px;
+        border: 3px solid #ffbd39;
+        padding: 50px;
+    }
+}
+
+@keyframes home-image {
+    100%{
+        margin-top: 20px;
+        padding: 40px;
+    }
+}

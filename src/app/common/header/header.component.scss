@@ -1,0 +1,65 @@
+.home-main-container {
+    background-color: transparent;
+    min-width: 100vh;
+}
+
+.mat-mdc-card-header {
+    padding: 0;
+}
+
+.header-section {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+
+.name-container h1 {
+    display: inline;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+
+.header-section h4{
+    display: inline;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: all .2s ease-out;
+}
+
+.nav-container h4 {
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5;
+}
+
+
+.nav-container h4:hover {
+    background-color: #ffbd39;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.active-tab {
+
+ background-color: #ffbd39;
+ border-radius: 10px;
+ padding: 5px;
+ cursor: pointer;
+}
