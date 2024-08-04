@@ -5,9 +5,10 @@ import { CommonInternalModule } from "../common/common-module"
 import {  MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
-    declarations: [ScreensComponent],
+    declarations: [ScreensComponent, ResumeComponent],
     imports: [
         ScreensRoutingModule,
         CommonInternalModule,

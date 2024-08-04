@@ -1,3 +1,57 @@
 <div class="about-container">
-    <p>works</p>
+    <div class="row remove-padding">
+        <div class="col-md-5">
+            <div class="about-image-container">
+                <img mat-card-image src="../../assets/images/home-image.png" alt="Photo of a Shiba Inu">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="about-me-container">
+                <div class="about-me">
+                    <h1>About Me</h1>
+                </div>
+                <div class="about-text">
+                    <h4>An accomplished <strong style="color: #ffbd39;">Full Stack Developer</strong> close to four
+                        years of experience, specializing in
+                        object-oriented design, web development, technical project management, and back-end development
+                        with cloud infrastructure od deployment.A proven track record of building scalable web designs
+                        and identifying opportunities to improve
+                        user engagement.</h4>
+                </div>
+
+                <div class="bio-container">
+                    <div class="bio-data-name">
+                        <div class="questions">
+                            <h3>Name:</h3>
+                            <h3>Date of birth:</h3>
+                            <h3>Address:</h3>
+                            <h3>Postal Code:</h3>
+                            <h3>Email:</h3>
+                            <h3>Phone:</h3>
+                        </div>
+
+                        <div class="answers">
+                            <h3>Mani S</h3>
+                            <h3>August 29, 1999</h3>
+                            <h3>India, Tamilnadu , Chennai</h3>
+                            <h3>600023</h3>
+                            <h3>maniandrew29899@gmail.com</h3>
+                            <h3>+91 9940145190</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-completion">
+                    <div class="completion">
+                        <h3 style="color: #ffbd39;">{{projectCount}}</h3>
+                        <h3>Projects complete</h3>
+                    </div>
+                    <div class="download-cv" (click)="downloadResume()">
+                        <button class="download-button" mat-fab extended>Download cv </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
