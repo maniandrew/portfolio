@@ -1,0 +1,73 @@
+.resume-container{
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0px 10%;
+    padding:1%;
+}
+
+.remove-padding{
+    margin-right:0px;
+}
+
+
+.resume-container .education {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+
+.education-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+
+
+.resume-title h1{
+    font-size: clamp(40px,20px,10px);
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.resume-content {
+    margin: 30px;
+}
+
+.resume-content h4 , .text-grey{
+    color: #999999;
+}
+
+
+.education-container .education-year{
+    font-size: 25px;
+    color: #ffbd39;
+    font-weight: 900;
+}
+
+
+.education-container .education-degree{
+    font-size: 25px;
+    color:#ffffff;
+}
+
+.education-container .education-base {
+    margin: 10px 0px 40px 0px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #969696;
+}
+
+
+.education-content h4{
+    color:#999999
+}
+

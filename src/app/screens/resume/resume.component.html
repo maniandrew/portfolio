@@ -1,1 +1,41 @@
-<p>resume works!</p>
+<div class="resume-container">
+    <div class="resume-title">
+        <h1>Resume</h1>
+    </div>
+    <div class="resume-content">
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quod vitae. Minus harum cumque rerum officiis
+            quisquam perspiciatis, tempore architecto. Consectetur maiores natus voluptatibus amet molestias veniam
+            tenetur cum excepturi corrupti placeat magni alias et, dicta corporis voluptatum! Nam libero, asperiores
+            aperiam dolorum eligendi iusto expedita deserunt? Quod, quidem obcaecati!</h4>
+    </div>
+    <div class="row remove-padding">
+        <div class="col-md-6">
+            <div class="education" *ngFor="let element of educationDetails">
+                <div class="education-container">
+                    <div class="education-title">
+                        <h3 class="education-year">{{element.year}}</h3>
+                        <h3 class="education-degree">{{element.course}}</h3>
+                        <h5 class="education-base">{{element.base}}</h5>
+                    </div>
+                    <div class="education-content">
+                        <h4>{{element.content}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="education" *ngFor="let element of workDetails">
+                <div class="education-container">
+                    <div class="education-title">
+                        <h3 class="education-year">{{element.year}}</h3>
+                        <h3 class="education-degree">{{element.company}}</h3>
+                        <h5 class="education-base">{{element.position}}</h5>
+                    </div>
+                    <div class="education-content">
+                        <h4>{{element.description}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

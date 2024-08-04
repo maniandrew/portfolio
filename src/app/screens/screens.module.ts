@@ -6,6 +6,7 @@ import {  MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { ResumeComponent } from './resume/resume.component';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [ScreensComponent, ResumeComponent],
@@ -14,7 +15,8 @@ import { ResumeComponent } from './resume/resume.component';
         CommonInternalModule,
         MatCardModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        CommonModule
     ]
 })
 
