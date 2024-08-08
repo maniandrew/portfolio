@@ -1,11 +1,11 @@
-
+@import '../../../styles/colors';
 
 .remove-padding {
     margin-right:0px;
 } 
 
 .about-me-container {
-    background-color: black;
+    background-color: $primary-background;
     padding: 10px 3rem;
 }
 
@@ -13,7 +13,7 @@
 .about-me h1{
     font-size: clamp(40px,20px,10px);
     font-weight: 900;
-    color: #ffffff;
+    color:$secondary-background;
 }
 
 .about-text {
@@ -21,11 +21,11 @@
 }
 
 .about-text h4 , .text-grey{
-    color: #999999;
+    color: $text-grey;
 }
 
 .bio-container h3{
-    color: white;
+    color: $secondary-background;
 }
 
 .about-me-container .bio-container {
@@ -38,13 +38,13 @@
 }
 
 .questions h3{
-    color: white;
+    color: $secondary-background;
     font-size: 16px;
     font-weight: 700;
 }
 
 .answers h3{
-    color:#999999;
+    color: $text-grey;
 }
 
 .project-completion .completion{
@@ -57,24 +57,24 @@
 
 .completion h3{
     font-size: clamp(20px , 15px ,10px);
-    color: #ffff;
+    color: $secondary-background;
     font-weight: 400;
 }
 
 
 
 .project-completion .download-cv button {
-    color: black;
+    color: $primary-background;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 12px;
-    background-color: #ffbd39;
+    background-color: $card-background;
     letter-spacing: 2px;
 }
 
 
 .about-image-container {
-    border: 5px solid #ffbd39 ;
+    border: 5px solid $card-background;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +87,7 @@
 
 .download-button:hover{
     width: 25%;
-    background-color: white !important;
+    background-color: $secondary-background !important;
 }
 
 

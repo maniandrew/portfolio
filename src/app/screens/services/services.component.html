@@ -1,0 +1,34 @@
+<!-- service container  -->
+<div class="service-container">
+
+    <!-- service header -->
+    <div class="service-header">
+        <div class="header-text">
+            <h1>Services</h1>
+        </div>
+        <div class="header-sub-text">
+            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</h3>
+        </div>
+    </div>
+
+    <!-- service content -->
+    <div class="service-content-container">
+        <div class="row">
+            <ng-container *ngFor="let tile of tiles">
+                <div class="col-md-4">
+                    <div class="service-card" >
+                        <div class="img-content">
+                            <img src={{tile.imagePath}} />
+                        </div>
+                        <div class="text-service-content">
+                            <h3>{{tile.text}}</h3>
+                            <p class="border-line"></p>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            
+        </div>
+    </div>
+
+</div>

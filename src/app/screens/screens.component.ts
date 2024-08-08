@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-screens',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
 })
 export class ScreensComponent {
 
+  constructor(private _route:Router) { }
+
+
+  ngOnInit() {
+      this._route.navigateByUrl('/screens/skills')
+  }
 
 }

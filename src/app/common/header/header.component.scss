@@ -1,3 +1,5 @@
+@import '../../../styles/colors';
+
 .home-main-container {
     background-color: transparent;
     min-width: 100vh;
@@ -13,7 +15,7 @@
     justify-content: space-around;
     align-items: center;
     min-width: 100%;
-    color: white;
+    color: $secondary-background;
     padding: 20px;
 }
 
@@ -29,7 +31,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    color: white;
+    color: $secondary-background;
 }
 
 .header-section h4{
@@ -42,14 +44,14 @@
 
 .nav-container h4 {
     cursor: pointer;
-    color: white;
+    color: $secondary-background;
     font-weight: 400;
     letter-spacing: 0.5;
 }
 
 
 .nav-container h4:hover {
-    background-color: #ffbd39;
+    background-color: $card-background;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
@@ -58,7 +60,7 @@
 
 .active-tab {
 
- background-color: #ffbd39;
+ background-color: $card-background;
  border-radius: 10px;
  padding: 5px;
  cursor: pointer;

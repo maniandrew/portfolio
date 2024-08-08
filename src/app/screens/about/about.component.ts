@@ -3,14 +3,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  standalone: true,
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
-  imports: [
-    MatCardModule,
-    MatButtonModule
-  ]
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
 

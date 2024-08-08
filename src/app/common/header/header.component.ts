@@ -19,6 +19,7 @@ export class HeaderComponent {
 
 
   routeHandler = (menu:string) => {
+    console.log('/screens/' + menu)
     this.selectedTab = menu
     this._route.navigateByUrl('/screens/' + menu)
   }

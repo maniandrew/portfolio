@@ -1,0 +1,28 @@
+@import '../../../styles/colors';
+
+.skills-container{
+    width: 80%;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+
+.skills-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-header-container h1{
+    font-size: clamp(45px , 35px ,15px);
+    color: white;
+    margin: 20px;
+}
+
+.skills-header-container .skills-text{
+    margin: 20px 0px;
+}
+
+.skills-header-container .skills-text h3 {
+    color:$text-grey;
+}

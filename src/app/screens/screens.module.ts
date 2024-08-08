@@ -7,16 +7,26 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { ResumeComponent } from './resume/resume.component';
 import { CommonModule } from "@angular/common";
+import { AboutComponent } from "./about/about.component";
+import { ServicesComponent } from './services/services.component';
+import {MatGridListModule } from '@angular/material/grid-list';
+import { SkillsComponent } from './skills/skills.component'
 
 @NgModule({
-    declarations: [ScreensComponent, ResumeComponent],
+    declarations: [ScreensComponent, AboutComponent,ResumeComponent , ServicesComponent, SkillsComponent],
     imports: [
         ScreensRoutingModule,
+
         CommonInternalModule,
+
         MatCardModule,
         MatButtonModule,
         MatIconModule,
-        CommonModule
+        MatGridListModule,
+        // this is for ng directives
+        CommonModule,
+
+
     ]
 })
 

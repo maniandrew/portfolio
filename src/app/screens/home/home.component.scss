@@ -1,3 +1,6 @@
+@import '../../../styles/colors';
+
+
 .home-main-container {
     min-height: 100vh;
     background-color: transparent;
@@ -14,27 +17,27 @@
     animation-name: home-content;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
 }
 
 .hello-div h3{
     font-size:15px;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #ffbd39;
+    color: $card-background;
 }
 
 
 .home-para-div h1 {
     margin-top: 20px;
     font-size: clamp(45px ,30px ,20px);
-    color: white;
+    color: $secondary-background;
     font-weight: 800;
 }
 
 
 .home-para-div span {
-    color:#ffbd39;
+    color:$card-background;
     font-size: clamp(45px ,30px ,20px);
     font-weight: 800;
 }
@@ -43,7 +46,7 @@
     display: flex;
     margin-top: 30px;
     font-size: clamp(30px,20px,10px);
-    color: white;
+    color: $secondary-background;
     font-weight: 600;
 }
 
@@ -56,16 +59,16 @@
 }
 
 .home-action-button .hire {
-    background-color: #ffbd39;
-    color: black;
+    background-color: $card-background;
+    color: $primary-background;
     letter-spacing: 3px;
     font-weight: 600;
 }
 
 .home-action-button .projects {
-    background-color: black;
+    background-color: $primary-background;
     border:none;
-    outline: 2px solid white;
+    outline: 2px solid $secondary-background;
 }
 
 
@@ -74,7 +77,7 @@
     animation-name: home-image;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
 }
 
 
@@ -92,7 +95,7 @@
     
     100%{
         margin-top: 100px;
-        border: 3px solid #ffbd39;
+        border: 3px solid $card-background;
         padding: 50px;
     }
 }

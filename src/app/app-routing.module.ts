@@ -5,6 +5,11 @@ const routes: Routes = [
   {
     path:'screens',
     loadChildren:(() => import('../app/screens/screens.module').then((m) => m.ScreensModule))
+  },
+  {
+    path:'',
+    redirectTo:'screens',
+    pathMatch:'full'
   }
 ];
 

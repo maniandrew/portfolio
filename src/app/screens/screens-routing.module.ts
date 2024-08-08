@@ -4,6 +4,8 @@ import { ScreensComponent } from "./screens.component";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import { ResumeComponent } from "./resume/resume.component";
+import { ServicesComponent } from "./services/services.component";
+import { SkillsComponent } from "./skills/skills.component";
 
 
 const routes:Routes = [
@@ -22,9 +24,17 @@ const routes:Routes = [
             {
                 path:'resume',
                 component:ResumeComponent
+            },
+            {
+                path:'services',
+                component:ServicesComponent
+            },
+            {
+                path:'skills',
+                component:SkillsComponent
             }
-        ]
-    },
+        ],
+    }
 ]
 
 @NgModule({
