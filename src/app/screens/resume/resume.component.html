@@ -10,7 +10,7 @@
     </div>
     <div class="row remove-padding">
         <div class="col-md-6">
-            <div class="education" *ngFor="let element of educationDetails">
+            <div class="education" *ngFor="let element of educationDetails.reverse()">
                 <div class="education-container">
                     <div class="education-title">
                         <h3 class="education-year">{{element.year}}</h3>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="education" *ngFor="let element of workDetails">
+            <div class="left-education-animation" *ngFor="let element of workDetails.reverse()">
                 <div class="education-container">
                     <div class="education-title">
                         <h3 class="education-year">{{element.year}}</h3>

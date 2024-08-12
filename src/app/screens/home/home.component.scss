@@ -74,10 +74,8 @@
 
 .image-container {
     display: flex;
-    animation-name: home-image;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
+    margin-top: 20px;
+    padding: 40px;
 }
 
 
@@ -97,12 +95,5 @@
         margin-top: 100px;
         border: 3px solid $card-background;
         padding: 50px;
-    }
-}
-
-@keyframes home-image {
-    100%{
-        margin-top: 20px;
-        padding: 40px;
     }
 }

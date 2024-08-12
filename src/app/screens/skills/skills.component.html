@@ -9,36 +9,19 @@
     </div>
     <div class="skill-content-container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
-                  </div>
-            </div>
+            <ng-container *ngFor="let skill of skills">
+                <div class="col-md-6">
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h2>{{skill.title}}</h2>
+                            <h2>{{skill.percent}}</h2>
+                        </div>
+                        <div class="progress progress-container">
+                            <div class="progress-bar text-bg-warning animate-progress"  [style.width]="skill.percent"></div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
         </div>
     </div>
 </div>

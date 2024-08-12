@@ -2,21 +2,24 @@
 
 .skills-container{
     width: 80%;
-    background-color: aqua;
     margin: 0 auto;
 }
+
+
 
 
 .skills-header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 30px 0px;
 }
 
 .skills-header-container h1{
     font-size: clamp(45px , 35px ,15px);
     color: white;
     margin: 20px;
+    font-weight: 900;
 }
 
 .skills-header-container .skills-text{
@@ -25,4 +28,46 @@
 
 .skills-header-container .skills-text h3 {
     color:$text-grey;
+}
+
+.card-content {
+    margin-bottom: 20px;
+}
+
+.card-content .card-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+
+.card-content .progress-container{
+    background-color: grey;
+    margin: 0px 20px;
+}
+
+.card-text h2 {
+    position: relative;
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    align-self: center;
+    display: inline-block;
+}
+.animate-progress{
+    animation: progress-animate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes progress-animate {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
 }

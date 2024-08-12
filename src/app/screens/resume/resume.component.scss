@@ -3,7 +3,7 @@
 .resume-container{
     min-width: 100vh;
     min-height: 100vh;
-    margin: 0px 10%;
+    margin: 20px 10%;
     padding:1%;
 }
 
@@ -12,12 +12,34 @@
 }
 
 
+
+
+
 .resume-container .education {
+    position:relative;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    animation-name: education-card;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    margin: 20px;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+
+.left-education-animation {
+    position:relative;
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
     margin: 20px;
     padding: 3%;
     border-radius: 10px;
+    animation-name: education-right-card;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -28,11 +50,8 @@
 }
 
 
-
-
-
 .resume-title h1{
-    font-size: clamp(40px,20px,10px);
+    font-size: clamp(45px,20px,10px);
     font-weight: 900;
     color: $secondary-background;
     text-align: center;
@@ -73,3 +92,24 @@
     color:$text-grey
 }
 
+
+
+
+@keyframes education-right-card {
+    0%{
+        right: -200px;
+    }
+    50%{
+        right: 0px;
+    }
+}
+
+
+@keyframes education-card {
+    0%{
+        left:-200px;
+    }
+    50%{
+        left: 0px;
+    }
+}
