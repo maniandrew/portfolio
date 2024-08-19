@@ -1,0 +1,90 @@
+<div class="projects-main-container">
+    <mat-card appearance="outlined" class="projects-card">
+        <mat-card-header>
+            <mat-card-title>
+                <div class="project-title">
+                    <h1>My Projects</h1>
+                </div>
+            </mat-card-title>
+            <mat-card-subtitle>
+                <div class="project-sub-content">
+                    <h4>
+                        My full-stack front-end web development expertise services, including app development, deliver
+                        responsive applications that meet your business requirements and keep you ahead in the
+                        competitive landscape.
+                    </h4>
+                </div>
+            </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div class="projects-container-content">
+
+                <div class="tab-container">
+                    
+                    <mat-tab-group animationDuration="1000ms">
+                        <ng-container *ngFor="let l of languagesKnown">
+                            <mat-tab [label]="l">
+                                <ng-container *ngFor="let d of languageDescription">
+                                    <ng-container *ngIf="l === d.name">
+                                        <div class="language-container">
+                                            <img mat-card-image [src]="d.path" />
+                                            <h4>{{d.description}}</h4>
+                                        </div>
+                                    </ng-container>
+                                </ng-container>
+                            </mat-tab>
+                        </ng-container>
+                        <!-- <mat-tab label="React">
+                            <div class="language-container">
+                                <img mat-card-image src="../../../assets/images/2.png" />
+                                <h4>
+                                    ⦁ Our mission is to don’t need to wait in a long queue to book a game or to collect
+                                    the
+                                    fun card in the pandemic time
+                                    ⦁ We have created the <span class="change-color">desktop application</span> that users can book any kind of game while
+                                    has
+                                    been displayed on the list page and in the <span class="change-color">Kiosk</span>, they can able to add quantity
+                                    based
+                                    on their requirements and user can add the product to the cart and user can pay the
+                                    bill in the <span class="change-color"> kiosk </span> , as per the client requirement
+                                </h4>
+                            </div>
+
+                            <div class="language-container">
+                                <img mat-card-image src="../../../assets/images/3.png" />
+                                <h4>
+                                    ⦁ Our mission is to don’t need to wait in a long queue to book a game or to collect
+                                    the
+                                    fun card in the pandemic time
+                                    ⦁ We have created the <span class="change-color">desktop application</span> that users can book any kind of game while
+                                    has
+                                    been displayed on the list page and in the <span class="change-color">Kiosk</span>, they can able to add quantity
+                                    based
+                                    on their requirements and user can add the product to the cart and user can pay the
+                                    bill in the <span class="change-color"> kiosk </span> , as per the client requirement
+                                </h4>
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="Angular">
+                            <div class="my-2">
+                                <img src="../../../assets/images/3.png" />
+
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="React Native">
+                            <div class="my-2 d-flex">
+                                <img src="../../../assets/images/market.png" />
+                                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis omnis, consectetur
+                                    fugiat aspernatur minus quis dolorem quibusdam! Maxime nihil inventore vitae ut
+                                    cupiditate doloribus error saepe, tempore, consequuntur incidunt magnam vel quo?
+                                    Iusto sequi repudiandae, modi, animi veniam doloribus non nulla unde eveniet
+                                    asperiores laborum magnam quos neque facilis ea.</h4>
+                            </div>
+                        </mat-tab> -->
+                    </mat-tab-group>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

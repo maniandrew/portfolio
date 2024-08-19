@@ -10,10 +10,20 @@ import { CommonModule } from "@angular/common";
 import { AboutComponent } from "./about/about.component";
 import { ServicesComponent } from './services/services.component';
 import {MatGridListModule } from '@angular/material/grid-list';
-import { SkillsComponent } from './skills/skills.component'
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
-    declarations: [ScreensComponent, AboutComponent,ResumeComponent , ServicesComponent, SkillsComponent],
+    declarations: [
+        ScreensComponent,
+        AboutComponent,
+        ResumeComponent , 
+        ServicesComponent, 
+        SkillsComponent, 
+        ProjectsComponent, 
+    ],
     imports: [
         ScreensRoutingModule,
 
@@ -23,8 +33,14 @@ import { SkillsComponent } from './skills/skills.component'
         MatButtonModule,
         MatIconModule,
         MatGridListModule,
+
+        // forms module ex(ngModel)
+        FormsModule,
         // this is for ng directives
         CommonModule,
+
+        // this is for tabs
+        MatTabsModule
 
 
     ]

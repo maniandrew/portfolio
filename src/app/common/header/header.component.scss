@@ -1,8 +1,12 @@
 @import '../../../styles/colors';
 
 .home-main-container {
+    top: 0;
     background-color: $primary-background;
     min-width: 100vh;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 .mat-mdc-card-header {

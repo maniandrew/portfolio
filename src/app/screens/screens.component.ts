@@ -12,7 +12,7 @@ export class ScreensComponent {
 
 
   ngOnInit() {
-      this._route.navigateByUrl('/screens/skills')
+      this._route.navigateByUrl('/screens/projects')
   }
 
 }

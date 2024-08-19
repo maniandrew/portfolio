@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router , RouterEvent } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-  selectedTab:String =''
+  selectedTab:string = '';
 
   constructor(private _route:Router) { }
 
 
   ngOnInit() {
-      if(!this.selectedTab) this.selectedTab = 'home'
+    if(!this.selectedTab) this.selectedTab =  'home'
   }
 
 

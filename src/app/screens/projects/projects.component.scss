@@ -1,0 +1,97 @@
+@import '../../../styles/colors';
+
+.projects-main-container { 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.projects-card {
+    background-color: transparent;
+    z-index: 0;
+}
+
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: white !important;
+}
+
+.mdc-tab__text-label{
+    --mat-tab-header-inactive-label-text-color:white !important;
+}
+
+.mdc-tab__text-label{
+    --mat-tab-header-inactive-label-text-color:#ffbd39 !important;
+}
+
+.mat-mdc-tab.mdc-tab{
+    --mat-tab-header-inactive-label-text-color:white !important;
+    --mat-tab-header-inactive-focus-indicator-color: white !important;
+}
+
+
+.mat-mdc-tab.mdc-tab--active {
+    --mdc-tab-indicator-active-indicator-color: white !important;
+    --mat-tab-header-active-label-text-color: #ffbd39 !important;
+    --mat-tab-header-active-focus-label-text-color: #ffbd39 !important;
+    --mat-tab-header-active-focus-indicator-color: white !important;
+    --mat-tab-header-inactive-label-text-color:white !important;
+}
+
+.mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+    --mat-tab-header-active-hover-indicator-color: #ffbd39 !important;
+}
+
+.mat-mdc-tab.mdc-tab:hover span{
+    color: #ffbd39 !important;
+}
+
+.mat-mdc-tab-header {
+    margin-bottom: 20px;
+}
+
+
+.project-title {
+    text-align: center;
+}
+
+.project-title h1{
+    color:white;
+    font-size: clamp(45px , 35px , 25px);
+    font-weight: 900;
+}
+
+.project-sub-content{
+    position: relative;
+    margin: auto;
+    margin-top: 3rem;
+    width: 80%;
+    padding: 10px;
+    color:$text-grey;
+}
+.language-container{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.language-container h4{
+    color: $secondary-background;
+    line-height: 30pt
+}
+
+.tab-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.change-color {
+    color: $card-background;
+    letter-spacing: 1px;
+}
+
+
+.projects-container-content {
+    z-index: 0 !important;
+}

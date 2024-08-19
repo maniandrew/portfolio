@@ -46,13 +46,13 @@ export class ResumeComponent {
         {
           company:'Proglint software solutions',
           description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore, hic atque sit aspernatur repellat! Sit placeat, officia mollitia earum facere nihil. Et minus, aliquid dicta laborum, optio temporibus facilis commodi maiores voluptatum nisi ullam dolor reiciendis, porro vero dolorum',
-          position:'software enigneer',
+          position:'software enigneer(junior)',
           year:'2022-2022'
         },
         {
           company:'Cortiqa health private ltd',
           description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore, hic atque sit aspernatur repellat! Sit placeat, officia mollitia earum facere nihil. Et minus, aliquid dicta laborum, optio temporibus facilis commodi maiores voluptatum nisi ullam dolor reiciendis, porro vero dolorum',
-          position:'software enigneer',
+          position:'software enigneer(senior)',
           year:'2022-2024'
         }
       ] as IOWorkDetails[]
