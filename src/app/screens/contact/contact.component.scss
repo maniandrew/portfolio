@@ -1,0 +1,96 @@
+
+@import '../../../styles/colors';
+
+.contact-container{
+    margin: auto 10%;
+}
+
+
+
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h1{
+    color:white;
+    font-size: clamp(45px , 30px ,20px);
+    font-weight: 900;
+    
+}
+
+.contact-content{
+    display: inline-block;
+    width: 40%;
+    margin: 20px auto;
+}
+
+
+.contact-content p {
+    text-align: center;
+    color: grey;
+}
+
+.image-container{
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-container img {
+    height: 500px;
+    width: 450px;
+}
+
+
+.color-set{
+    background-color: #f8f9fa;
+}
+
+
+.input-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.input-container input , textarea{
+    height: 45px;
+    width: 500px;
+    border: 2px solid #d9dee2;
+    padding: 25px 15px;
+    border-radius: 5px; 
+}
+
+
+textarea{
+    height: 150px;
+    padding-top: 5px;
+}
+
+.input-field-button {
+    background-color: $card-background;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0px 50px;
+}
+
+
+.button-design{
+    margin: 0 30px;
+    align-self: flex-start;
+}
+
+
+.icon-temps{
+    background-color: yellow;
+}

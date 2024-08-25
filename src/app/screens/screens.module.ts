@@ -14,6 +14,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FormsModule } from "@angular/forms";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,7 @@ import { FormsModule } from "@angular/forms";
         ResumeComponent , 
         ServicesComponent, 
         SkillsComponent, 
-        ProjectsComponent, 
+        ProjectsComponent, ContactComponent, 
     ],
     imports: [
         ScreensRoutingModule,
