@@ -10,85 +10,34 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
-            <div class="icon-temps ">
-                <div class="icon-shadow-color">
-                    <img src="" />
-                </div>
-                <div class="address-temp">
-                    <h3>Address</h3>
-                </div>
-                <div class="address-text">
-                   <h1>98 West 21th Street, Suite 721 New York NY 10016</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="icon-temps ">
-                <div class="icon-shadow-color">
-                    <img src="" />
-                </div>
-                <div class="address-temp">
-                    <h3>Address</h3>
-                </div>
-                <div class="address-text">
-                   <h1>98 West 21th Street, Suite 721 New York NY 10016</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="icon-temps">
-                <div class="icon-shadow-color">
-                    <img src="" />
-                </div>
-                <div class="address-temp">
-                    <h3>Address</h3>
-                </div>
-                <div class="address-text">
-                   <h1>98 West 21th Street, Suite 721 New York NY 10016</h1>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="icon-temps ">
-                <div class="icon-shadow-color">
-                    <img src="" />
-                </div>
-                <div class="address-temp">
-                    <h3>Address</h3>
-                </div>
-                <div class="address-text">
-                   <h1>98 West 21th Street, Suite 721 New York NY 10016</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-md-6">
             <div class="image-container">
                 <img src="../../../assets/images/home-image.png" />
             </div>
         </div>
         <div class="col-md-6 color-set">
-            <div class="input-container">
-                <div class="input-fields">
-                    <input type="text" placeholder="Name" />
+            <form #form action="https://formspree.io/f/mnnawalk" method="post">
+                <div class="input-container">
+                    <div class="input-fields">
+                        <input type="text" placeholder="Your Name" name="name" />
+                    </div>
+                    <div class="input-fields">
+                        <input type="email" placeholder="Your Email" name="email" />
+                    </div>
+                    <div class="input-fields">
+                        <input type="text" placeholder="Your Subject" name="subject" />
+                    </div>
+                    <div class="input-fields">
+                        <textarea id="w3review" name="w3review" rows="4" cols="50" name="message"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="button-design">
+                        <button mat-fab extended class="input-field-button" (click)="form.submit()">
+                            send message
+                        </button>
+                    </div>
                 </div>
-                <div class="input-fields">
-                    <input type="email" placeholder="Email" />
-                </div>
-                <div class="input-fields">
-                    <input type="text" placeholder="Subject" />
-                </div>
-                <div class="input-fields">
-                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Message"></textarea>
-                </div>
-                <div class="button-design">
-                    <button mat-fab extended class="input-field-button">
-                        send message
-                    </button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>

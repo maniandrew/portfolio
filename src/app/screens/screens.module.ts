@@ -21,9 +21,10 @@ import { ContactComponent } from './contact/contact.component';
         ScreensComponent,
         AboutComponent,
         ResumeComponent , 
-        ServicesComponent, 
         SkillsComponent, 
-        ProjectsComponent, ContactComponent, 
+        ProjectsComponent, 
+        ContactComponent, 
+        ServicesComponent
     ],
     imports: [
         ScreensRoutingModule,
